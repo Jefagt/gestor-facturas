@@ -1,0 +1,27 @@
+# Archivos y carpetas de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Carpetas de compilación
+bin/
+obj/
+Debug/
+Release/
+
+# Archivos de configuración temporales
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+*.cache
+*.pdb
+
+# Archivos de paquetes NuGet
+*.nupkg
+packages/
+
+# Archivos de configuración locales
+appsettings.Development.json
