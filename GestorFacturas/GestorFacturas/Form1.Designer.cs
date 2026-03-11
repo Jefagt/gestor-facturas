@@ -44,6 +44,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.lblConexion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +54,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(318, 20);
             this.txtNombre.TabIndex = 0;
-            this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -64,7 +64,6 @@
             this.label1.Size = new System.Drawing.Size(408, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "Almacén y sucursal S.A.";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -155,6 +154,7 @@
             this.btnAgregar.TabIndex = 13;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnEditar
             // 
@@ -165,6 +165,7 @@
             this.btnEditar.TabIndex = 14;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
@@ -175,6 +176,7 @@
             this.btnEliminar.TabIndex = 15;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnListar
             // 
@@ -185,6 +187,7 @@
             this.btnListar.TabIndex = 16;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // label8
             // 
@@ -196,11 +199,22 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Lista de clientes";
             // 
+            // lblConexion
+            // 
+            this.lblConexion.AutoSize = true;
+            this.lblConexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConexion.Location = new System.Drawing.Point(43, 484);
+            this.lblConexion.Name = "lblConexion";
+            this.lblConexion.Size = new System.Drawing.Size(127, 13);
+            this.lblConexion.TabIndex = 18;
+            this.lblConexion.Text = "Estadode conexion...";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(790, 519);
+            this.Controls.Add(this.lblConexion);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnEliminar);
@@ -219,6 +233,8 @@
             this.Controls.Add(this.txtNombre);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -243,6 +259,7 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblConexion;
     }
 }
 

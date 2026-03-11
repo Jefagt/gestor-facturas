@@ -13,7 +13,7 @@ namespace GestorFacturas
 {
     public partial class Form1 : Form
     {
-        string connectionString = "server=localhost;database=gestor_facturas;user=root;password=rootdev;";
+        string connectionString = "server=localhost;database=gestorfacturas;user=root;password=rootdev;";
 
         public Form1()
         {
@@ -27,28 +27,19 @@ namespace GestorFacturas
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
                     conn.Open();
-                    MessageBox.Show("Conexión exitosa a MySQL");
+                    lblConexion.Text = "Conexión establecida";
+                    lblConexion.ForeColor = Color.Green;
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message);
+                lblConexion.Text = "Conexión fallida";
+                lblConexion.ForeColor = Color.Red;
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
+        {                    if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgvClientes.Rows[e.RowIndex];
                 txtNombre.Text = row.Cells["nombre"].Value.ToString();
@@ -57,5 +48,79 @@ namespace GestorFacturas
                 txtEmail.Text = row.Cells["email"].Value.ToString();
             }
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT * FROM clientes";
+                MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dgvClientes.DataSource = dt;
+            }
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "INSERT INTO clientes (nombre, direccion, telefono, email) VALUES (@nombre, @direccion, @telefono, @email)";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@nombre", txtNombre.Text);
+                cmd.Parameters.AddWithValue("@direccion", txtDireccion.Text);
+                cmd.Parameters.AddWithValue("@telefono", txtTelefono.Text);
+                cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                cmd.ExecuteNonQuery();
+            }
+            MessageBox.Show("Cliente agregado correctamente");
+            btnListar_Click(null, null); // refrescar lista
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvClientes.SelectedRows.Count > 0)
+            {
+                int id = Convert.ToInt32(dgvClientes.SelectedRows[0].Cells["id"].Value);
+
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "UPDATE clientes SET nombre=@nombre, direccion=@direccion, telefono=@telefono, email=@email WHERE id=@id";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@nombre", txtNombre.Text);
+                    cmd.Parameters.AddWithValue("@direccion", txtDireccion.Text);
+                    cmd.Parameters.AddWithValue("@telefono", txtTelefono.Text);
+                    cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.ExecuteNonQuery();
+                }
+                MessageBox.Show("Cliente actualizado correctamente");
+                btnListar_Click(null, null);
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvClientes.SelectedRows.Count > 0)
+            {
+                int id = Convert.ToInt32(dgvClientes.SelectedRows[0].Cells["id"].Value);
+
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "DELETE FROM clientes WHERE id=@id";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.ExecuteNonQuery();
+                }
+                MessageBox.Show("Cliente eliminado correctamente");
+                btnListar_Click(null, null);
+            }
+        }
+
+        
     }
 }
