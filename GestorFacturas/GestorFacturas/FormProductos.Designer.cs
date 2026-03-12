@@ -37,13 +37,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dgbProductos = new System.Windows.Forms.DataGridView();
+            this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgbProductos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -124,13 +124,13 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Stock";
             // 
-            // dgbProductos
+            // dgvProductos
             // 
-            this.dgbProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgbProductos.Location = new System.Drawing.Point(44, 237);
-            this.dgbProductos.Name = "dgbProductos";
-            this.dgbProductos.Size = new System.Drawing.Size(705, 150);
-            this.dgbProductos.TabIndex = 9;
+            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProductos.Location = new System.Drawing.Point(44, 237);
+            this.dgvProductos.Name = "dgvProductos";
+            this.dgvProductos.Size = new System.Drawing.Size(705, 150);
+            this.dgvProductos.TabIndex = 9;
             // 
             // label6
             // 
@@ -181,6 +181,7 @@
             this.btnListar.TabIndex = 14;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // FormProductos
             // 
@@ -192,7 +193,7 @@
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dgbProductos);
+            this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.txtStock);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtPrecio);
@@ -204,7 +205,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormProductos";
             this.Text = "FormProductos";
-            ((System.ComponentModel.ISupportInitialize)(this.dgbProductos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,7 +222,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dgbProductos;
+        private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEditar;

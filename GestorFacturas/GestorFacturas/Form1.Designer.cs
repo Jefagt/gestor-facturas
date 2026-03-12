@@ -45,6 +45,7 @@
             this.btnListar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.lblConexion = new System.Windows.Forms.Label();
+            this.btnVerProductos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -205,15 +206,27 @@
             this.lblConexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConexion.Location = new System.Drawing.Point(43, 484);
             this.lblConexion.Name = "lblConexion";
-            this.lblConexion.Size = new System.Drawing.Size(127, 13);
+            this.lblConexion.Size = new System.Drawing.Size(131, 13);
             this.lblConexion.TabIndex = 18;
-            this.lblConexion.Text = "Estadode conexion...";
+            this.lblConexion.Text = "Estado de conexion...";
+            // 
+            // btnVerProductos
+            // 
+            this.btnVerProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerProductos.Location = new System.Drawing.Point(612, 70);
+            this.btnVerProductos.Name = "btnVerProductos";
+            this.btnVerProductos.Size = new System.Drawing.Size(156, 23);
+            this.btnVerProductos.TabIndex = 19;
+            this.btnVerProductos.Text = "Ver Productos";
+            this.btnVerProductos.UseVisualStyleBackColor = true;
+            this.btnVerProductos.Click += new System.EventHandler(this.btnVerProductos_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(790, 519);
+            this.Controls.Add(this.btnVerProductos);
             this.Controls.Add(this.lblConexion);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnListar);
@@ -260,6 +273,7 @@
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblConexion;
+        private System.Windows.Forms.Button btnVerProductos;
     }
 }
 
