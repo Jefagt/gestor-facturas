@@ -39,10 +39,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dgbProductos = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnListar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgbProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -142,55 +142,55 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Lista de productos";
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(319, 406);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(319, 406);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(106, 23);
+            this.btnAgregar.TabIndex = 11;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnEditar
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(444, 406);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Editar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(444, 406);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(106, 23);
+            this.btnEditar.TabIndex = 12;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnEliminar
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(565, 406);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 23);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Eliminar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(565, 406);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(106, 23);
+            this.btnEliminar.TabIndex = 13;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnListar
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(682, 406);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(106, 23);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "Listar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnListar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListar.Location = new System.Drawing.Point(682, 406);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(106, 23);
+            this.btnListar.TabIndex = 14;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
             // 
             // FormProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnListar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dgbProductos);
             this.Controls.Add(this.txtStock);
@@ -223,9 +223,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgbProductos;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnListar;
     }
 }
