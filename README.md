@@ -17,7 +17,7 @@ Pensado como ejemplo de aplicación empresarial.
 - Roles de usuario (administrador, vendedor)
 
 ## 📷 Capturas
-*(Aquí agregarás imágenes de la interfaz cuando tengas el proyecto funcionando)*
+*(Aquí se agregaran imágenes de la interfaz cuando tenga el proyecto funcionando)*
 
 ## ▶️ Cómo ejecutar
 1. Clonar el repositorio
