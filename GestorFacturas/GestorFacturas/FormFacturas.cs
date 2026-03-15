@@ -16,5 +16,10 @@ namespace GestorFacturas
         {
             InitializeComponent();
         }
+
+        private void btnAgregarFactura_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
