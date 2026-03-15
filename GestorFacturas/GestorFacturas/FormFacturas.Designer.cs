@@ -40,17 +40,17 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(116, 75);
+            this.comboBox1.Location = new System.Drawing.Point(227, 73);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 21);
+            this.comboBox1.Size = new System.Drawing.Size(187, 21);
             this.comboBox1.TabIndex = 0;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(420, 75);
+            this.comboBox2.Location = new System.Drawing.Point(588, 76);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(165, 21);
             this.comboBox2.TabIndex = 1;
             // 
             // label1
@@ -77,7 +77,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(316, 76);
+            this.label3.Location = new System.Drawing.Point(449, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 20);
             this.label3.TabIndex = 4;
@@ -85,9 +85,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 115);
+            this.textBox1.Location = new System.Drawing.Point(227, 113);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 20);
+            this.textBox1.Size = new System.Drawing.Size(187, 20);
             this.textBox1.TabIndex = 5;
             // 
             // label4
@@ -96,9 +96,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(30, 115);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 20);
+            this.label4.Size = new System.Drawing.Size(191, 20);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Cantidad";
+            this.label4.Text = "Cantidad de productos";
             // 
             // FormFacturas
             // 
