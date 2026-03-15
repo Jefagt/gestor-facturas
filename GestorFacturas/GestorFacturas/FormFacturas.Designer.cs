@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbCliente = new System.Windows.Forms.ComboBox();
+            this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPrecioUnitario = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cmbCliente
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(227, 73);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(187, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cmbCliente.FormattingEnabled = true;
+            this.cmbCliente.Location = new System.Drawing.Point(227, 73);
+            this.cmbCliente.Name = "cmbCliente";
+            this.cmbCliente.Size = new System.Drawing.Size(187, 21);
+            this.cmbCliente.TabIndex = 0;
             // 
-            // comboBox2
+            // cmbProducto
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(588, 76);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(165, 21);
-            this.comboBox2.TabIndex = 1;
+            this.cmbProducto.FormattingEnabled = true;
+            this.cmbProducto.Location = new System.Drawing.Point(588, 76);
+            this.cmbProducto.Name = "cmbProducto";
+            this.cmbProducto.Size = new System.Drawing.Size(165, 21);
+            this.cmbProducto.TabIndex = 1;
             // 
             // label1
             // 
@@ -87,12 +87,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Productos";
             // 
-            // textBox1
+            // txtCantidad
             // 
-            this.textBox1.Location = new System.Drawing.Point(227, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtCantidad.Location = new System.Drawing.Point(227, 113);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(187, 20);
+            this.txtCantidad.TabIndex = 5;
             // 
             // label4
             // 
@@ -114,12 +114,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Precio Unitario";
             // 
-            // textBox2
+            // txtPrecioUnitario
             // 
-            this.textBox2.Location = new System.Drawing.Point(588, 113);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(165, 20);
-            this.textBox2.TabIndex = 7;
+            this.txtPrecioUnitario.Location = new System.Drawing.Point(588, 113);
+            this.txtPrecioUnitario.Name = "txtPrecioUnitario";
+            this.txtPrecioUnitario.Size = new System.Drawing.Size(165, 20);
+            this.txtPrecioUnitario.TabIndex = 7;
             // 
             // label6
             // 
@@ -131,12 +131,12 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Total";
             // 
-            // textBox3
+            // txtTotal
             // 
-            this.textBox3.Location = new System.Drawing.Point(227, 152);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(187, 20);
-            this.textBox3.TabIndex = 9;
+            this.txtTotal.Location = new System.Drawing.Point(227, 152);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(187, 20);
+            this.txtTotal.TabIndex = 9;
             // 
             // FormFacturas
             // 
@@ -144,16 +144,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPrecioUnitario);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbProducto);
+            this.Controls.Add(this.cmbCliente);
             this.Name = "FormFacturas";
             this.Text = "FormFacturas";
             this.ResumeLayout(false);
@@ -163,16 +163,16 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbCliente;
+        private System.Windows.Forms.ComboBox cmbProducto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPrecioUnitario;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTotal;
     }
 }
