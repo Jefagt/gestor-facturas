@@ -39,13 +39,13 @@
             this.txtPrecioUnitario = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvFacturas = new System.Windows.Forms.DataGridView();
             this.btnAgregarFactura = new System.Windows.Forms.Button();
             this.btnEditarFactura = new System.Windows.Forms.Button();
             this.btnEliminarFactura = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnListarFactura = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbCliente
@@ -145,13 +145,13 @@
             this.txtTotal.Size = new System.Drawing.Size(187, 20);
             this.txtTotal.TabIndex = 9;
             // 
-            // dataGridView1
+            // dgvFacturas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 231);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(733, 150);
-            this.dataGridView1.TabIndex = 11;
+            this.dgvFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFacturas.Location = new System.Drawing.Point(33, 231);
+            this.dgvFacturas.Name = "dgvFacturas";
+            this.dgvFacturas.Size = new System.Drawing.Size(733, 150);
+            this.dgvFacturas.TabIndex = 11;
             // 
             // btnAgregarFactura
             // 
@@ -183,15 +183,15 @@
             this.btnEliminarFactura.Text = "Eliminar Factura";
             this.btnEliminarFactura.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnListarFactura
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(651, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Listar Factura";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnListarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListarFactura.Location = new System.Drawing.Point(651, 415);
+            this.btnListarFactura.Name = "btnListarFactura";
+            this.btnListarFactura.Size = new System.Drawing.Size(128, 23);
+            this.btnListarFactura.TabIndex = 15;
+            this.btnListarFactura.Text = "Listar Factura";
+            this.btnListarFactura.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -209,11 +209,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnListarFactura);
             this.Controls.Add(this.btnEliminarFactura);
             this.Controls.Add(this.btnEditarFactura);
             this.Controls.Add(this.btnAgregarFactura);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvFacturas);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label5);
@@ -227,7 +227,7 @@
             this.Controls.Add(this.cmbCliente);
             this.Name = "FormFacturas";
             this.Text = "FormFacturas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,11 +246,11 @@
         private System.Windows.Forms.TextBox txtPrecioUnitario;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTotal;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvFacturas;
         private System.Windows.Forms.Button btnAgregarFactura;
         private System.Windows.Forms.Button btnEditarFactura;
         private System.Windows.Forms.Button btnEliminarFactura;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnListarFactura;
         private System.Windows.Forms.Label label7;
     }
 }
