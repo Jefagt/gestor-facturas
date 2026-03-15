@@ -44,6 +44,7 @@
             this.btnEditarFactura = new System.Windows.Forms.Button();
             this.btnEliminarFactura = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -192,11 +193,22 @@
             this.button1.Text = "Listar Factura";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(30, 204);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(168, 24);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Lista de Facturas";
+            // 
             // FormFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEliminarFactura);
             this.Controls.Add(this.btnEditarFactura);
@@ -239,5 +251,6 @@
         private System.Windows.Forms.Button btnEditarFactura;
         private System.Windows.Forms.Button btnEliminarFactura;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label7;
     }
 }
