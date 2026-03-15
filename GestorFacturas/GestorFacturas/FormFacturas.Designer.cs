@@ -40,6 +40,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAgregarFactura = new System.Windows.Forms.Button();
+            this.btnEditarFactura = new System.Windows.Forms.Button();
+            this.btnEliminarFactura = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -149,13 +152,44 @@
             this.dataGridView1.Size = new System.Drawing.Size(733, 150);
             this.dataGridView1.TabIndex = 11;
             // 
+            // btnAgregarFactura
+            // 
+            this.btnAgregarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarFactura.Location = new System.Drawing.Point(249, 415);
+            this.btnAgregarFactura.Name = "btnAgregarFactura";
+            this.btnAgregarFactura.Size = new System.Drawing.Size(128, 23);
+            this.btnAgregarFactura.TabIndex = 12;
+            this.btnAgregarFactura.Text = "Agregar Factura";
+            this.btnAgregarFactura.UseVisualStyleBackColor = true;
+            // 
+            // btnEditarFactura
+            // 
+            this.btnEditarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarFactura.Location = new System.Drawing.Point(383, 415);
+            this.btnEditarFactura.Name = "btnEditarFactura";
+            this.btnEditarFactura.Size = new System.Drawing.Size(128, 23);
+            this.btnEditarFactura.TabIndex = 13;
+            this.btnEditarFactura.Text = "Editar Factura";
+            this.btnEditarFactura.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminarFactura
+            // 
+            this.btnEliminarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarFactura.Location = new System.Drawing.Point(517, 415);
+            this.btnEliminarFactura.Name = "btnEliminarFactura";
+            this.btnEliminarFactura.Size = new System.Drawing.Size(128, 23);
+            this.btnEliminarFactura.TabIndex = 14;
+            this.btnEliminarFactura.Text = "Eliminar Factura";
+            this.btnEliminarFactura.UseVisualStyleBackColor = true;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(357, 406);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(651, 415);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Listar Factura";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // FormFacturas
@@ -164,6 +198,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEliminarFactura);
+            this.Controls.Add(this.btnEditarFactura);
+            this.Controls.Add(this.btnAgregarFactura);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtTotal);
@@ -198,6 +235,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnAgregarFactura;
+        private System.Windows.Forms.Button btnEditarFactura;
+        private System.Windows.Forms.Button btnEliminarFactura;
         private System.Windows.Forms.Button button1;
     }
 }
