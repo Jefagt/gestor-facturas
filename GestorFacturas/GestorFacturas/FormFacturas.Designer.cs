@@ -162,6 +162,7 @@
             this.btnAgregarFactura.TabIndex = 12;
             this.btnAgregarFactura.Text = "Agregar Factura";
             this.btnAgregarFactura.UseVisualStyleBackColor = true;
+            this.btnAgregarFactura.Click += new System.EventHandler(this.btnAgregarFactura_Click);
             // 
             // btnEditarFactura
             // 
