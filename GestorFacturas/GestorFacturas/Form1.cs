@@ -126,5 +126,11 @@ namespace GestorFacturas
             FormProductos formSec = new FormProductos();
             formSec.Show(); // Abrir el formulario en paralelo
         }
+
+        private void btnVerFacturas_Click(object sender, EventArgs e)
+        {
+            FormFacturas formSec = new FormFacturas();
+            formSec.Show(); // Abrir el formulario en paralelo
+        }
     }
 }
