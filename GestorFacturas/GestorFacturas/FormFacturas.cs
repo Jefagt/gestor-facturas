@@ -153,16 +153,22 @@ namespace GestorFacturas
 
         private void txtTotal_TextChanged(object sender, EventArgs e)
         {
+            CalcularTotal();
+        }
+
+        private void CalcularTotal()
+        {
             if (int.TryParse(txtCantidad.Text, out int cantidad) &&
-        decimal.TryParse(txtPrecioUnitario.Text, out decimal precio))
+                decimal.TryParse(txtPrecioUnitario.Text, out decimal precio))
             {
                 decimal total = cantidad * precio;
-                txtTotal.Text = total.ToString("0.00");
+                txtTotal.Text = total.ToString("0.00"); // muestra con dos decimales
             }
             else
             {
                 txtTotal.Text = "0.00";
             }
         }
+
     }
 }
