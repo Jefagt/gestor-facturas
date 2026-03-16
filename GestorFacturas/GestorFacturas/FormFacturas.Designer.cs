@@ -131,6 +131,8 @@
             this.txtPrecioUnitario.Name = "txtPrecioUnitario";
             this.txtPrecioUnitario.Size = new System.Drawing.Size(165, 20);
             this.txtPrecioUnitario.TabIndex = 7;
+            this.txtPrecioUnitario.Click += new System.EventHandler(this.txtPrecioUnitario_TextChanged);
+            this.txtPrecioUnitario.TextChanged += new System.EventHandler(this.txtPrecioUnitario_TextChanged);
             // 
             // label6
             // 
@@ -148,6 +150,8 @@
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(187, 20);
             this.txtTotal.TabIndex = 9;
+            this.txtTotal.Click += new System.EventHandler(this.txtTotal_TextChanged);
+            this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
             // 
             // dgvFacturas
             // 
