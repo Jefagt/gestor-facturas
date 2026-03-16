@@ -46,6 +46,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lblConexion = new System.Windows.Forms.Label();
             this.btnVerProductos = new System.Windows.Forms.Button();
+            this.btnVerFacturas = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -221,11 +222,23 @@
             this.btnVerProductos.UseVisualStyleBackColor = true;
             this.btnVerProductos.Click += new System.EventHandler(this.btnVerProductos_Click);
             // 
+            // btnVerFacturas
+            // 
+            this.btnVerFacturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerFacturas.Location = new System.Drawing.Point(612, 110);
+            this.btnVerFacturas.Name = "btnVerFacturas";
+            this.btnVerFacturas.Size = new System.Drawing.Size(156, 23);
+            this.btnVerFacturas.TabIndex = 20;
+            this.btnVerFacturas.Text = "Ver Facturas";
+            this.btnVerFacturas.UseVisualStyleBackColor = true;
+            this.btnVerFacturas.Click += new System.EventHandler(this.btnVerFacturas_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(790, 519);
+            this.Controls.Add(this.btnVerFacturas);
             this.Controls.Add(this.btnVerProductos);
             this.Controls.Add(this.lblConexion);
             this.Controls.Add(this.label8);
@@ -274,6 +287,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblConexion;
         private System.Windows.Forms.Button btnVerProductos;
+        private System.Windows.Forms.Button btnVerFacturas;
     }
 }
 
