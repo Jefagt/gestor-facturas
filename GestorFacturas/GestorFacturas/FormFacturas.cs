@@ -141,5 +141,28 @@ namespace GestorFacturas
                 cmbProducto.DisplayMember = "nombre";
             }
         }
+
+        private void txtPrecioUnitario_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbProducto.SelectedItem != null)
+            {
+                DataRowView row = (DataRowView)cmbProducto.SelectedItem;
+                txtPrecioUnitario.Text = row["precio"].ToString();
+            }
+        }
+
+        private void txtTotal_TextChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtCantidad.Text, out int cantidad) &&
+        decimal.TryParse(txtPrecioUnitario.Text, out decimal precio))
+            {
+                decimal total = cantidad * precio;
+                txtTotal.Text = total.ToString("0.00");
+            }
+            else
+            {
+                txtTotal.Text = "0.00";
+            }
+        }
     }
 }
