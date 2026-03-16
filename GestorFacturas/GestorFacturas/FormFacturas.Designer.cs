@@ -43,7 +43,7 @@
             this.btnAgregarFactura = new System.Windows.Forms.Button();
             this.btnEditarFactura = new System.Windows.Forms.Button();
             this.btnEliminarFactura = new System.Windows.Forms.Button();
-            this.btnListarFactura = new System.Windows.Forms.Button();
+            this.btnListarFacturas = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).BeginInit();
             this.SuspendLayout();
@@ -184,15 +184,16 @@
             this.btnEliminarFactura.Text = "Eliminar Factura";
             this.btnEliminarFactura.UseVisualStyleBackColor = true;
             // 
-            // btnListarFactura
+            // btnListarFacturas
             // 
-            this.btnListarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarFactura.Location = new System.Drawing.Point(651, 415);
-            this.btnListarFactura.Name = "btnListarFactura";
-            this.btnListarFactura.Size = new System.Drawing.Size(128, 23);
-            this.btnListarFactura.TabIndex = 15;
-            this.btnListarFactura.Text = "Listar Factura";
-            this.btnListarFactura.UseVisualStyleBackColor = true;
+            this.btnListarFacturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListarFacturas.Location = new System.Drawing.Point(651, 415);
+            this.btnListarFacturas.Name = "btnListarFacturas";
+            this.btnListarFacturas.Size = new System.Drawing.Size(128, 23);
+            this.btnListarFacturas.TabIndex = 15;
+            this.btnListarFacturas.Text = "Listar Factura";
+            this.btnListarFacturas.UseVisualStyleBackColor = true;
+            this.btnListarFacturas.Click += new System.EventHandler(this.btnListarFacturas_Click);
             // 
             // label7
             // 
@@ -210,7 +211,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.btnListarFactura);
+            this.Controls.Add(this.btnListarFacturas);
             this.Controls.Add(this.btnEliminarFactura);
             this.Controls.Add(this.btnEditarFactura);
             this.Controls.Add(this.btnAgregarFactura);
@@ -251,7 +252,7 @@
         private System.Windows.Forms.Button btnAgregarFactura;
         private System.Windows.Forms.Button btnEditarFactura;
         private System.Windows.Forms.Button btnEliminarFactura;
-        private System.Windows.Forms.Button btnListarFactura;
+        private System.Windows.Forms.Button btnListarFacturas;
         private System.Windows.Forms.Label label7;
     }
 }
