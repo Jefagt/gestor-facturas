@@ -229,7 +229,7 @@
             this.btnVerFacturas.Name = "btnVerFacturas";
             this.btnVerFacturas.Size = new System.Drawing.Size(156, 23);
             this.btnVerFacturas.TabIndex = 20;
-            this.btnVerFacturas.Text = "Ver Facturas";
+            this.btnVerFacturas.Text = "Crear Facturas";
             this.btnVerFacturas.UseVisualStyleBackColor = true;
             this.btnVerFacturas.Click += new System.EventHandler(this.btnVerFacturas_Click);
             // 
