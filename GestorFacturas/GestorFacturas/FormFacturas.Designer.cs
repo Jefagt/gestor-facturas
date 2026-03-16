@@ -65,7 +65,7 @@
             this.cmbProducto.Name = "cmbProducto";
             this.cmbProducto.Size = new System.Drawing.Size(165, 21);
             this.cmbProducto.TabIndex = 1;
-            this.cmbProducto.SelectedIndexChanged += new System.EventHandler(this.cmbProducto_SelectedIndexChanged);
+            this.cmbProducto.SelectedIndexChanged += new System.EventHandler(this.txtPrecioUnitario_TextChanged);
             this.cmbProducto.Click += new System.EventHandler(this.cmbProducto_SelectedIndexChanged);
             // 
             // label1
@@ -104,6 +104,7 @@
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(187, 20);
             this.txtCantidad.TabIndex = 5;
+            this.txtCantidad.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
             // 
             // label4
             // 
@@ -131,8 +132,6 @@
             this.txtPrecioUnitario.Name = "txtPrecioUnitario";
             this.txtPrecioUnitario.Size = new System.Drawing.Size(165, 20);
             this.txtPrecioUnitario.TabIndex = 7;
-            this.txtPrecioUnitario.Click += new System.EventHandler(this.txtPrecioUnitario_TextChanged);
-            this.txtPrecioUnitario.TextChanged += new System.EventHandler(this.txtPrecioUnitario_TextChanged);
             // 
             // label6
             // 
@@ -150,8 +149,6 @@
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(187, 20);
             this.txtTotal.TabIndex = 9;
-            this.txtTotal.Click += new System.EventHandler(this.txtTotal_TextChanged);
-            this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
             // 
             // dgvFacturas
             // 
