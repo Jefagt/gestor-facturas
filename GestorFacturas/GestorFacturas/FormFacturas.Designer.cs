@@ -147,6 +147,7 @@
             // 
             this.txtTotal.Location = new System.Drawing.Point(227, 152);
             this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(187, 20);
             this.txtTotal.TabIndex = 9;
             // 
