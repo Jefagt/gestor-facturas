@@ -55,6 +55,8 @@
             this.cmbCliente.Name = "cmbCliente";
             this.cmbCliente.Size = new System.Drawing.Size(187, 21);
             this.cmbCliente.TabIndex = 0;
+            this.cmbCliente.SelectedIndexChanged += new System.EventHandler(this.cmbCliente_SelectedIndexChanged);
+            this.cmbCliente.Click += new System.EventHandler(this.cmbCliente_SelectedIndexChanged);
             // 
             // cmbProducto
             // 
@@ -63,6 +65,8 @@
             this.cmbProducto.Name = "cmbProducto";
             this.cmbProducto.Size = new System.Drawing.Size(165, 21);
             this.cmbProducto.TabIndex = 1;
+            this.cmbProducto.SelectedIndexChanged += new System.EventHandler(this.cmbProducto_SelectedIndexChanged);
+            this.cmbProducto.Click += new System.EventHandler(this.cmbProducto_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -173,6 +177,7 @@
             this.btnEditarFactura.TabIndex = 13;
             this.btnEditarFactura.Text = "Editar Factura";
             this.btnEditarFactura.UseVisualStyleBackColor = true;
+            this.btnEditarFactura.Click += new System.EventHandler(this.btnEditarFactura_Click);
             // 
             // btnEliminarFactura
             // 
@@ -183,6 +188,7 @@
             this.btnEliminarFactura.TabIndex = 14;
             this.btnEliminarFactura.Text = "Eliminar Factura";
             this.btnEliminarFactura.UseVisualStyleBackColor = true;
+            this.btnEliminarFactura.Click += new System.EventHandler(this.btnEliminarFactura_Click);
             // 
             // btnListarFacturas
             // 
