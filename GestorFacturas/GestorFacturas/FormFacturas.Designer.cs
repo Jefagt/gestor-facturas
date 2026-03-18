@@ -56,7 +56,6 @@
             this.cmbCliente.Name = "cmbCliente";
             this.cmbCliente.Size = new System.Drawing.Size(187, 21);
             this.cmbCliente.TabIndex = 0;
-            this.cmbCliente.SelectedIndexChanged += new System.EventHandler(this.cmbCliente_SelectedIndexChanged);
             this.cmbCliente.Click += new System.EventHandler(this.cmbCliente_SelectedIndexChanged);
             // 
             // cmbProducto
