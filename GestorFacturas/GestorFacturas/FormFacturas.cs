@@ -117,7 +117,7 @@ namespace GestorFacturas
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                string query = "SELECT id, nombre FROM clientes";
+                string query = "SELECT id, nombre FROM clientes ORDER BY nombre='Consumidor Final' DESC, nombre ASC";
                 MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
