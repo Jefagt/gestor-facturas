@@ -121,6 +121,13 @@ namespace GestorFacturas
                 MySqlDataAdapter da = new MySqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
+
+                // Insertar Consumidor Final como primera fila
+                /*DataRow row = dt.NewRow();
+                row["id"] = 0;
+                row["nombre"] = "Consumidor Final";
+                dt.Rows.InsertAt(row, 0);*/
+
                 cmbCliente.DataSource = dt;
                 cmbCliente.ValueMember = "id";
                 cmbCliente.DisplayMember = "nombre";
