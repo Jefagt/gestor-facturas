@@ -226,6 +226,7 @@
             this.btnAgregarDetalle.TabIndex = 17;
             this.btnAgregarDetalle.Text = "Agregar Detalle";
             this.btnAgregarDetalle.UseVisualStyleBackColor = true;
+            this.btnAgregarDetalle.Click += new System.EventHandler(this.btnAgregarDetalle_Click);
             // 
             // label8
             // 
