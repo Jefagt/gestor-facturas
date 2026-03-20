@@ -190,5 +190,10 @@ namespace GestorFacturas
                 dgvDetalle.Rows.Add(productoId, nombreProducto, cantidad, precio, subtotal);
             }
         }
+
+        private void btnGenerarFactura_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
