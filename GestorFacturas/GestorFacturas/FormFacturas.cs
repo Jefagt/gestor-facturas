@@ -177,5 +177,18 @@ namespace GestorFacturas
             }
         }
 
+        private void btnAgregarDetalle_Click(object sender, EventArgs e)
+        {
+            if (cmbProducto.SelectedItem != null && int.TryParse(txtCantidad.Text, out int cantidad))
+            {
+                DataRowView row = (DataRowView)cmbProducto.SelectedItem;
+                string nombreProducto = row["nombre"].ToString();
+                int productoId = Convert.ToInt32(row["id"]);
+                decimal precio = Convert.ToDecimal(row["precio"]);
+                decimal subtotal = cantidad * precio;
+
+                dgvDetalle.Rows.Add(productoId, nombreProducto, cantidad, precio, subtotal);
+            }
+        }
     }
 }
