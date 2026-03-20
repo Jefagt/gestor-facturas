@@ -48,6 +48,7 @@
             this.btnAgregarDetalle = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.dgvDetalle = new System.Windows.Forms.DataGridView();
+            this.btnGenerarFactura = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.SuspendLayout();
@@ -158,7 +159,7 @@
             // dgvFacturas
             // 
             this.dgvFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFacturas.Location = new System.Drawing.Point(33, 435);
+            this.dgvFacturas.Location = new System.Drawing.Point(33, 461);
             this.dgvFacturas.Name = "dgvFacturas";
             this.dgvFacturas.Size = new System.Drawing.Size(733, 150);
             this.dgvFacturas.TabIndex = 11;
@@ -166,7 +167,7 @@
             // btnAgregarFactura
             // 
             this.btnAgregarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarFactura.Location = new System.Drawing.Point(249, 619);
+            this.btnAgregarFactura.Location = new System.Drawing.Point(249, 645);
             this.btnAgregarFactura.Name = "btnAgregarFactura";
             this.btnAgregarFactura.Size = new System.Drawing.Size(128, 23);
             this.btnAgregarFactura.TabIndex = 12;
@@ -177,7 +178,7 @@
             // btnEditarFactura
             // 
             this.btnEditarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarFactura.Location = new System.Drawing.Point(383, 619);
+            this.btnEditarFactura.Location = new System.Drawing.Point(383, 645);
             this.btnEditarFactura.Name = "btnEditarFactura";
             this.btnEditarFactura.Size = new System.Drawing.Size(128, 23);
             this.btnEditarFactura.TabIndex = 13;
@@ -188,7 +189,7 @@
             // btnEliminarFactura
             // 
             this.btnEliminarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarFactura.Location = new System.Drawing.Point(517, 619);
+            this.btnEliminarFactura.Location = new System.Drawing.Point(517, 645);
             this.btnEliminarFactura.Name = "btnEliminarFactura";
             this.btnEliminarFactura.Size = new System.Drawing.Size(128, 23);
             this.btnEliminarFactura.TabIndex = 14;
@@ -199,7 +200,7 @@
             // btnListarFacturas
             // 
             this.btnListarFacturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListarFacturas.Location = new System.Drawing.Point(651, 619);
+            this.btnListarFacturas.Location = new System.Drawing.Point(651, 645);
             this.btnListarFacturas.Name = "btnListarFacturas";
             this.btnListarFacturas.Size = new System.Drawing.Size(128, 23);
             this.btnListarFacturas.TabIndex = 15;
@@ -211,7 +212,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(30, 408);
+            this.label7.Location = new System.Drawing.Point(30, 434);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(168, 24);
             this.label7.TabIndex = 16;
@@ -246,11 +247,23 @@
             this.dgvDetalle.Size = new System.Drawing.Size(733, 150);
             this.dgvDetalle.TabIndex = 19;
             // 
+            // btnGenerarFactura
+            // 
+            this.btnGenerarFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerarFactura.Location = new System.Drawing.Point(588, 407);
+            this.btnGenerarFactura.Name = "btnGenerarFactura";
+            this.btnGenerarFactura.Size = new System.Drawing.Size(165, 23);
+            this.btnGenerarFactura.TabIndex = 20;
+            this.btnGenerarFactura.Text = "Generar Factura";
+            this.btnGenerarFactura.UseVisualStyleBackColor = true;
+            this.btnGenerarFactura.Click += new System.EventHandler(this.btnGenerarFactura_Click);
+            // 
             // FormFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 654);
+            this.ClientSize = new System.Drawing.Size(800, 686);
+            this.Controls.Add(this.btnGenerarFactura);
             this.Controls.Add(this.dgvDetalle);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnAgregarDetalle);
@@ -302,5 +315,6 @@
         private System.Windows.Forms.Button btnAgregarDetalle;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dgvDetalle;
+        private System.Windows.Forms.Button btnGenerarFactura;
     }
 }
