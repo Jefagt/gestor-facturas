@@ -47,9 +47,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnAgregarDetalle = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvDetalle = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbCliente
@@ -237,20 +237,20 @@
             this.label8.TabIndex = 18;
             this.label8.Text = "Lista de detalles";
             // 
-            // dataGridView1
+            // dgvDetalle
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 234);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(733, 150);
-            this.dataGridView1.TabIndex = 19;
+            this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalle.Location = new System.Drawing.Point(33, 234);
+            this.dgvDetalle.Name = "dgvDetalle";
+            this.dgvDetalle.Size = new System.Drawing.Size(733, 150);
+            this.dgvDetalle.TabIndex = 19;
             // 
             // FormFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 654);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvDetalle);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnAgregarDetalle);
             this.Controls.Add(this.label7);
@@ -273,7 +273,7 @@
             this.Name = "FormFacturas";
             this.Text = "FormFacturas";
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,6 +300,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnAgregarDetalle;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDetalle;
     }
 }
