@@ -193,7 +193,42 @@ namespace GestorFacturas
 
         private void btnGenerarFactura_Click(object sender, EventArgs e)
         {
+            int clienteId = Convert.ToInt32(cmbCliente.SelectedValue);
+            decimal totalFactura = 0;
 
+            foreach (DataGridViewRow row in dgvDetalle.Rows)
+            {
+                totalFactura += Convert.ToDecimal(row.Cells["Subtotal"].Value);
+            }
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+
+                // Insertar factura
+                string queryFactura = "INSERT INTO facturas (cliente_id, total) VALUES (@cliente, @total)";
+                MySqlCommand cmdFactura = new MySqlCommand(queryFactura, conn);
+                cmdFactura.Parameters.AddWithValue("@cliente", clienteId);
+                cmdFactura.Parameters.AddWithValue("@total", totalFactura);
+                cmdFactura.ExecuteNonQuery();
+
+                int facturaId = (int)cmdFactura.LastInsertedId;
+
+                // Insertar detalles
+                foreach (DataGridViewRow row in dgvDetalle.Rows)
+                {
+                    string queryDetalle = "INSERT INTO factura_detalle (factura_id, producto_id, cantidad, precio_unitario, subtotal) VALUES (@factura, @producto, @cantidad, @precio, @subtotal)";
+                    MySqlCommand cmdDetalle = new MySqlCommand(queryDetalle, conn);
+                    cmdDetalle.Parameters.AddWithValue("@factura", facturaId);
+                    cmdDetalle.Parameters.AddWithValue("@producto", Convert.ToInt32(row.Cells["ProductoId"].Value));
+                    cmdDetalle.Parameters.AddWithValue("@cantidad", Convert.ToInt32(row.Cells["Cantidad"].Value));
+                    cmdDetalle.Parameters.AddWithValue("@precio", Convert.ToDecimal(row.Cells["Precio"].Value));
+                    cmdDetalle.Parameters.AddWithValue("@subtotal", Convert.ToDecimal(row.Cells["Subtotal"].Value));
+                    cmdDetalle.ExecuteNonQuery();
+                }
+            }
+
+            MessageBox.Show("Factura guardada con éxito");
         }
     }
 }
