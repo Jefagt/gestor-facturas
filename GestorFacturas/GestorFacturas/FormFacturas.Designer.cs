@@ -45,7 +45,7 @@
             this.btnEliminarFactura = new System.Windows.Forms.Button();
             this.btnListarFacturas = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAgregarDetalle = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).BeginInit();
@@ -217,15 +217,15 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Lista de Facturas";
             // 
-            // button1
+            // btnAgregarDetalle
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(588, 172);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Agregar Detalle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregarDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarDetalle.Location = new System.Drawing.Point(588, 172);
+            this.btnAgregarDetalle.Name = "btnAgregarDetalle";
+            this.btnAgregarDetalle.Size = new System.Drawing.Size(165, 23);
+            this.btnAgregarDetalle.TabIndex = 17;
+            this.btnAgregarDetalle.Text = "Agregar Detalle";
+            this.btnAgregarDetalle.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -252,7 +252,7 @@
             this.ClientSize = new System.Drawing.Size(800, 654);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAgregarDetalle);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnListarFacturas);
             this.Controls.Add(this.btnEliminarFactura);
@@ -298,7 +298,7 @@
         private System.Windows.Forms.Button btnEliminarFactura;
         private System.Windows.Forms.Button btnListarFacturas;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAgregarDetalle;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
