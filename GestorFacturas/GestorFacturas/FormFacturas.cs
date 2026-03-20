@@ -21,6 +21,21 @@ namespace GestorFacturas
             InitializeComponent();
         }
 
+        private void FormFacturas_Load(object sender, EventArgs e)
+        {
+            dgvDetalle.Columns.Clear();
+
+            // Columna oculta para el ID del producto
+            dgvDetalle.Columns.Add("ProductoId", "ProductoId");
+            dgvDetalle.Columns["ProductoId"].Visible = false;
+
+            // Columnas visibles
+            dgvDetalle.Columns.Add("Producto", "Producto");
+            dgvDetalle.Columns.Add("Cantidad", "Cantidad");
+            dgvDetalle.Columns.Add("Precio", "Precio Unitario");
+            dgvDetalle.Columns.Add("Subtotal", "Subtotal");
+        }
+
         private void btnListarFacturas_Click(object sender, EventArgs e)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
