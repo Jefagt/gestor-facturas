@@ -8,13 +8,10 @@ Pensado como ejemplo de aplicación empresarial.
 ## 🛠️ Tecnologías
 - C# (.NET)
 - MySQL
-- HTML, CSS, JavaScript (para interfaz web)
 
 ## 🚀 Funcionalidades
 - Registro de clientes y productos
 - Emisión de facturas
-- Reportes exportables (PDF/Excel)
-- Roles de usuario (administrador, vendedor)
 
 ## 📷 Capturas
 *(Aquí se agregaran imágenes de la interfaz cuando tenga el proyecto funcionando)*
@@ -22,4 +19,4 @@ Pensado como ejemplo de aplicación empresarial.
 ## ▶️ Cómo ejecutar
 1. Clonar el repositorio
 2. Configurar la base de datos en MySQL
-3. Ejecutar el proyecto en Visual Studio
+3. Ejecutar el proyecto en Visual Studio 2026
