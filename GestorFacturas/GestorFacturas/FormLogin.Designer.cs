@@ -28,37 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // label1
+            // panel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(243, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(312, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Almacen y Comercial S.A.";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.panel1.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel1.Location = new System.Drawing.Point(275, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(292, 339);
+            this.panel1.TabIndex = 0;
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(806, 375);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.ClientSize = new System.Drawing.Size(784, 381);
+            this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(800, 420);
             this.Name = "FormLogin";
-            this.Text = "FormLogin";
+            this.RightToLeftLayout = true;
+            this.Text = "Sistema de gestión de negocios";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
