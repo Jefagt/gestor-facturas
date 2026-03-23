@@ -16,5 +16,12 @@ namespace GestorFacturas
         {
             InitializeComponent();
         }
+
+        private void FormLogin_Resize(object sender, EventArgs e)
+        {
+            panelLogin.Left = (this.ClientSize.Width - panelLogin.Width) / 2;
+            panelLogin.Top = (this.ClientSize.Height - panelLogin.Height) / 2;
+        }
+
     }
 }
