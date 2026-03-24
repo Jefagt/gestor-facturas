@@ -23,5 +23,19 @@ namespace GestorFacturas
             panelLogin.Top = (this.ClientSize.Height - panelLogin.Height) / 2;
         }
 
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
