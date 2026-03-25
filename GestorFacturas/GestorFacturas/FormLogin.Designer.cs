@@ -46,6 +46,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panelLogin.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -61,10 +62,10 @@
             this.panelLogin.BackColor = System.Drawing.Color.Silver;
             this.panelLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLogin.Controls.Add(this.tableLayoutPanel2);
-            this.panelLogin.Location = new System.Drawing.Point(137, 46);
+            this.panelLogin.Location = new System.Drawing.Point(137, 32);
             this.panelLogin.Margin = new System.Windows.Forms.Padding(0);
             this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(560, 593);
+            this.panelLogin.Size = new System.Drawing.Size(560, 642);
             this.panelLogin.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -84,9 +85,10 @@
             this.tableLayoutPanel2.Controls.Add(this.textBox1, 0, 8);
             this.tableLayoutPanel2.Controls.Add(this.button1, 0, 13);
             this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 15);
+            this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 19);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 18;
+            this.tableLayoutPanel2.RowCount = 20;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -105,6 +107,8 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -118,7 +122,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(552, 584);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(552, 633);
             this.tableLayoutPanel2.TabIndex = 4;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
@@ -165,11 +169,11 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Noto Sans JP", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Noto Sans JP", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(179, 62);
+            this.label1.Location = new System.Drawing.Point(185, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 35);
+            this.label1.Size = new System.Drawing.Size(182, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Inicio de sesión";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -178,11 +182,11 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Noto Sans JP", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Noto Sans JP", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(87, 3);
+            this.label2.Location = new System.Drawing.Point(70, 1);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(378, 46);
+            this.label2.Size = new System.Drawing.Size(411, 51);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre de la empresa";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -303,9 +307,17 @@
             this.label7.Location = new System.Drawing.Point(3, 566);
             this.label7.Name = "label7";
             this.label7.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.label7.Size = new System.Drawing.Size(187, 16);
+            this.label7.Size = new System.Drawing.Size(195, 16);
             this.label7.TabIndex = 9;
-            this.label7.Text = "Usuario de prueba";
+            this.label7.Text = "Usuarios de prueba";
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.Location = new System.Drawing.Point(53, 596);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(445, 33);
+            this.panel3.TabIndex = 12;
             // 
             // FormLogin
             // 
@@ -355,5 +367,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel3;
     }
 }
