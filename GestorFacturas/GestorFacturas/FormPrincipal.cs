@@ -12,9 +12,35 @@ namespace GestorFacturas
 {
     public partial class FormPrincipal : Form
     {
-        public FormPrincipal()
+        private string rolUsuario;
+
+        public FormPrincipal(string rol)
         {
             InitializeComponent();
+            rolUsuario = rol;
+        }
+
+        private void FormPrincipal_Load(object sender, EventArgs e)
+        {
+            if (rolUsuario == "admin")
+            {
+                // Admin: acceso completo
+                //btnUsuarios.Enabled = true; // botón para gestionar usuarios
+                //btnReportes.Enabled = true;
+            }
+            else if (rolUsuario == "vendedor")
+            {
+                // Vendedor: acceso limitado
+                //btnUsuarios.Enabled = false; // no puede cambiar usuarios
+                //btnReportes.Enabled = true;
+            }
+            else if (rolUsuario == "cliente")
+            {
+                // Cliente: acceso restringido
+                //btnUsuarios.Enabled = false;
+                //btnReportes.Enabled = false;
+                //btnFacturas.Enabled = true; // solo ver facturas
+            }
         }
     }
 }
