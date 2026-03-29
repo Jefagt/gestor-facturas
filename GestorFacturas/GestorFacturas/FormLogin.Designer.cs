@@ -38,7 +38,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtcontrasena = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUsario = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -103,13 +103,13 @@
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.panel7, 0, 23);
             this.tableLayoutPanel2.Controls.Add(this.label7, 0, 17);
-            this.tableLayoutPanel2.Controls.Add(this.textBox2, 0, 11);
+            this.tableLayoutPanel2.Controls.Add(this.txtcontrasena, 0, 11);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.label6, 0, 10);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 7);
-            this.tableLayoutPanel2.Controls.Add(this.textBox1, 0, 8);
+            this.tableLayoutPanel2.Controls.Add(this.txtUsario, 0, 8);
             this.tableLayoutPanel2.Controls.Add(this.btnLogin, 0, 13);
             this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 15);
             this.tableLayoutPanel2.Controls.Add(this.panel3, 0, 19);
@@ -248,15 +248,15 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "Usuarios de prueba";
             // 
-            // textBox2
+            // txtcontrasena
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(52, 366);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(449, 29);
-            this.textBox2.TabIndex = 9;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txtcontrasena.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtcontrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcontrasena.Location = new System.Drawing.Point(52, 366);
+            this.txtcontrasena.Name = "txtcontrasena";
+            this.txtcontrasena.Size = new System.Drawing.Size(449, 29);
+            this.txtcontrasena.TabIndex = 9;
+            this.txtcontrasena.UseSystemPasswordChar = true;
             // 
             // panel1
             // 
@@ -362,14 +362,14 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Usuario";
             // 
-            // textBox1
+            // txtUsario
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(52, 297);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(449, 29);
-            this.textBox1.TabIndex = 8;
+            this.txtUsario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUsario.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsario.Location = new System.Drawing.Point(52, 297);
+            this.txtUsario.Name = "txtUsario";
+            this.txtUsario.Size = new System.Drawing.Size(449, 29);
+            this.txtUsario.TabIndex = 8;
             // 
             // btnLogin
             // 
@@ -643,8 +643,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUsario;
+        private System.Windows.Forms.TextBox txtcontrasena;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
