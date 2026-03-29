@@ -42,5 +42,28 @@ namespace GestorFacturas
         {
 
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string usuario = txtUsuario.Text;
+            string contraseña = txtContraseña.Text;
+            string rol = "";
+
+            if (usuario == "admin" && contraseña == "admin123")
+                rol = "admin";
+            else if (usuario == "vendedor" && contraseña == "vendedor123")
+                rol = "vendedor";
+            else if (usuario == "cliente" && contraseña == "cliente123")
+                rol = "cliente";
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos");
+                return;
+            }
+
+            FormPrincipal form = new FormPrincipal(rol); // pasamos el rol al form principal
+            form.Show();
+            this.Hide();
+        }
     }
 }
