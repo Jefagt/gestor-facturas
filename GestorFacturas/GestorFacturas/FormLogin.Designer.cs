@@ -597,7 +597,7 @@
             this.Name = "FormLogin";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Sistema de gestión de negocios";
+            this.Text = "Sistema de gestión de negocios - Login";
             this.Load += new System.EventHandler(this.FormLogin_Resize);
             this.Resize += new System.EventHandler(this.FormLogin_Resize);
             this.panelLogin.ResumeLayout(false);
