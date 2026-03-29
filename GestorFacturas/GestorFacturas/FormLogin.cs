@@ -46,7 +46,7 @@ namespace GestorFacturas
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string usuario = txtUsuario.Text;
-            string contraseña = txtContraseña.Text;
+            string contraseña = txtContrasena.Text;
             string rol = "";
 
             if (usuario == "admin" && contraseña == "admin123")
