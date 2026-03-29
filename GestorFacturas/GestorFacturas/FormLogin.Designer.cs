@@ -38,7 +38,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtcontrasena = new System.Windows.Forms.TextBox();
+            this.txtContrasena = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -103,7 +103,7 @@
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.panel7, 0, 23);
             this.tableLayoutPanel2.Controls.Add(this.label7, 0, 17);
-            this.tableLayoutPanel2.Controls.Add(this.txtcontrasena, 0, 11);
+            this.tableLayoutPanel2.Controls.Add(this.txtContrasena, 0, 11);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 5);
@@ -248,15 +248,15 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "Usuarios de prueba";
             // 
-            // txtcontrasena
+            // txtContrasena
             // 
-            this.txtcontrasena.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtcontrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcontrasena.Location = new System.Drawing.Point(52, 366);
-            this.txtcontrasena.Name = "txtcontrasena";
-            this.txtcontrasena.Size = new System.Drawing.Size(449, 29);
-            this.txtcontrasena.TabIndex = 9;
-            this.txtcontrasena.UseSystemPasswordChar = true;
+            this.txtContrasena.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtContrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContrasena.Location = new System.Drawing.Point(52, 366);
+            this.txtContrasena.Name = "txtContrasena";
+            this.txtContrasena.Size = new System.Drawing.Size(449, 29);
+            this.txtContrasena.TabIndex = 9;
+            this.txtContrasena.UseSystemPasswordChar = true;
             // 
             // panel1
             // 
@@ -644,7 +644,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtcontrasena;
+        private System.Windows.Forms.TextBox txtContrasena;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
