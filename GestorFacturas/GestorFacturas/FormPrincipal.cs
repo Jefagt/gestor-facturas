@@ -47,5 +47,21 @@ namespace GestorFacturas
         {
 
         }
+
+        private void AbrirFormEnPanel(Form formHijo)
+        {
+            // Limpia el panel
+            panelContenido.Controls.Clear();
+
+            // Configura el formulario hijo
+            formHijo.TopLevel = false;
+            formHijo.FormBorderStyle = FormBorderStyle.None;
+            formHijo.Dock = DockStyle.Fill;
+
+            // Agrega al panel
+            panelContenido.Controls.Add(formHijo);
+            formHijo.Show();
+        }
+
     }
 }
