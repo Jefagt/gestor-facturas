@@ -63,5 +63,9 @@ namespace GestorFacturas
             formHijo.Show();
         }
 
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormClientes());
+        }
     }
 }
