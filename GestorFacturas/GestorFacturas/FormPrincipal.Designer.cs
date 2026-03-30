@@ -39,6 +39,7 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
+            this.btnFacturas = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +69,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.btnFacturas);
             this.panel3.Controls.Add(this.btnProductos);
             this.panel3.Controls.Add(this.btnClientes);
             this.panel3.Controls.Add(this.label2);
@@ -147,6 +149,18 @@
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = false;
             // 
+            // btnFacturas
+            // 
+            this.btnFacturas.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnFacturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacturas.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnFacturas.Location = new System.Drawing.Point(11, 221);
+            this.btnFacturas.Name = "btnFacturas";
+            this.btnFacturas.Size = new System.Drawing.Size(173, 36);
+            this.btnFacturas.TabIndex = 4;
+            this.btnFacturas.Text = "Facturas";
+            this.btnFacturas.UseVisualStyleBackColor = false;
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,5 +196,6 @@
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button btnProductos;
+        private System.Windows.Forms.Button btnFacturas;
     }
 }
