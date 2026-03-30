@@ -42,5 +42,10 @@ namespace GestorFacturas
                 //btnFacturas.Enabled = true; // solo ver facturas
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
