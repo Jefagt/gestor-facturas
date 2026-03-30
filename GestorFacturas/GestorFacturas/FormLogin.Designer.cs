@@ -88,7 +88,7 @@
             this.panelLogin.BackColor = System.Drawing.Color.Silver;
             this.panelLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLogin.Controls.Add(this.tableLayoutPanel2);
-            this.panelLogin.Location = new System.Drawing.Point(136, -3);
+            this.panelLogin.Location = new System.Drawing.Point(136, 29);
             this.panelLogin.Margin = new System.Windows.Forms.Padding(0);
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(561, 762);
@@ -581,7 +581,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(834, 749);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(834, 861);
             this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -590,10 +590,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(834, 749);
+            this.ClientSize = new System.Drawing.Size(834, 861);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(850, 650);
+            this.MinimumSize = new System.Drawing.Size(850, 900);
             this.Name = "FormLogin";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
