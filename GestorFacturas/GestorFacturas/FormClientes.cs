@@ -11,11 +11,11 @@ using MySql.Data.MySqlClient;
 
 namespace GestorFacturas
 {
-    public partial class Form1 : Form
+    public partial class FormClientes : Form
     {
         string connectionString = "server=localhost;database=gestorfacturas;user=root;password=rootdev;";
 
-        public Form1()
+        public FormClientes()
         {
             InitializeComponent();
         }
