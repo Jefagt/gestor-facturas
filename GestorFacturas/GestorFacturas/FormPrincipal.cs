@@ -72,5 +72,10 @@ namespace GestorFacturas
         {
             AbrirFormEnPanel(new FormProductos());
         }
+
+        private void btnFacturas_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormFacturas());
+        }
     }
 }
