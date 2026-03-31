@@ -52,7 +52,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(834, 25);
+            this.panel1.Size = new System.Drawing.Size(934, 25);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -75,7 +75,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 726);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(834, 23);
+            this.panel2.Size = new System.Drawing.Size(934, 23);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -104,6 +104,7 @@
             this.btnFacturas.TabIndex = 4;
             this.btnFacturas.Text = "Facturas";
             this.btnFacturas.UseVisualStyleBackColor = false;
+            this.btnFacturas.Click += new System.EventHandler(this.btnFacturas_Click);
             // 
             // btnProductos
             // 
@@ -160,7 +161,7 @@
             this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenido.Location = new System.Drawing.Point(200, 25);
             this.panelContenido.Name = "panelContenido";
-            this.panelContenido.Size = new System.Drawing.Size(634, 701);
+            this.panelContenido.Size = new System.Drawing.Size(734, 701);
             this.panelContenido.TabIndex = 3;
             // 
             // FormPrincipal
@@ -168,13 +169,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(834, 749);
+            this.ClientSize = new System.Drawing.Size(934, 749);
             this.Controls.Add(this.panelContenido);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(850, 766);
+            this.MinimumSize = new System.Drawing.Size(950, 766);
             this.Name = "FormPrincipal";
             this.Text = "Sistema de Gestión de negocios - Dashboard";
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
