@@ -87,6 +87,7 @@ namespace GestorFacturas
         {
             ResetearColoresMenu();
             btnProductos.BackColor = Color.RoyalBlue;
+            btnProductos.ForeColor = Color.White;
             AbrirFormEnPanel(new FormProductos());
         }
 
@@ -94,6 +95,7 @@ namespace GestorFacturas
         {
             ResetearColoresMenu();
             btnFacturas.BackColor = Color.RoyalBlue;
+            btnFacturas.ForeColor = Color.White;
             AbrirFormEnPanel(new FormFacturas());
         }
     }
