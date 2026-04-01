@@ -81,14 +81,14 @@ namespace GestorFacturas
         private void btnProductos_Click(object sender, EventArgs e)
         {
             ResetearColoresMenu();
-            btnClientes.BackColor = Color.RoyalBlue;
+            btnProductos.BackColor = Color.RoyalBlue;
             AbrirFormEnPanel(new FormProductos());
         }
 
         private void btnFacturas_Click(object sender, EventArgs e)
         {
             ResetearColoresMenu();
-            btnClientes.BackColor = Color.RoyalBlue;
+            btnFacturas.BackColor = Color.RoyalBlue;
             AbrirFormEnPanel(new FormFacturas());
         }
     }
