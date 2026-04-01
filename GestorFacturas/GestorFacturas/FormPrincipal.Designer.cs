@@ -37,7 +37,7 @@
             this.btnProductos = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.panelContenido = new System.Windows.Forms.Panel();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panel1.SuspendLayout();
@@ -86,7 +86,7 @@
             this.panel3.Controls.Add(this.btnProductos);
             this.panel3.Controls.Add(this.btnClientes);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.btnDashboard);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 25);
             this.panel3.Name = "panel3";
@@ -143,17 +143,17 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Menú Principal";
             // 
-            // button1
+            // btnDashboard
             // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Location = new System.Drawing.Point(11, 64);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Dashboard";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDashboard.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnDashboard.Location = new System.Drawing.Point(11, 64);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(173, 36);
+            this.btnDashboard.TabIndex = 0;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = false;
             // 
             // panelContenido
             // 
@@ -194,7 +194,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panelContenido;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
