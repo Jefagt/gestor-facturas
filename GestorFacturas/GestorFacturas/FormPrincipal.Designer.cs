@@ -145,9 +145,9 @@
             // 
             // btnDashboard
             // 
-            this.btnDashboard.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnDashboard.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnDashboard.ForeColor = System.Drawing.Color.MidnightBlue;
             this.btnDashboard.Location = new System.Drawing.Point(11, 64);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(173, 36);
