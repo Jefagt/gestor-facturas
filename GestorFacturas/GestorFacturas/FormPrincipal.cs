@@ -65,24 +65,30 @@ namespace GestorFacturas
 
         private void ResetearColoresMenu()
         {
-            btnDashboard.BackColor = Color.DarkBlue;
-            btnClientes.BackColor = Color.DarkBlue;
-            btnProductos.BackColor = Color.DarkBlue;
-            btnFacturas.BackColor = Color.DarkBlue;
+            btnDashboard.BackColor = Color.White;
+            btnClientes.BackColor = Color.White;
+            btnProductos.BackColor = Color.White;
+            btnFacturas.BackColor = Color.White;
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
+            ResetearColoresMenu(); 
+            btnClientes.BackColor = Color.RoyalBlue;
             AbrirFormEnPanel(new FormClientes());
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
+            ResetearColoresMenu();
+            btnClientes.BackColor = Color.RoyalBlue;
             AbrirFormEnPanel(new FormProductos());
         }
 
         private void btnFacturas_Click(object sender, EventArgs e)
         {
+            ResetearColoresMenu();
+            btnClientes.BackColor = Color.RoyalBlue;
             AbrirFormEnPanel(new FormFacturas());
         }
     }
