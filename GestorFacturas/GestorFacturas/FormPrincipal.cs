@@ -63,6 +63,14 @@ namespace GestorFacturas
             formHijo.Show();
         }
 
+        private void ResetearColoresMenu()
+        {
+            btnDashboard.BackColor = Color.DarkBlue;
+            btnClientes.BackColor = Color.DarkBlue;
+            btnProductos.BackColor = Color.DarkBlue;
+            btnFacturas.BackColor = Color.DarkBlue;
+        }
+
         private void btnClientes_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new FormClientes());
