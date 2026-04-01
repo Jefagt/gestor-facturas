@@ -79,7 +79,7 @@ namespace GestorFacturas
             ResetearColoresMenu();
             btnDashboard.BackColor = Color.RoyalBlue;
             btnDashboard.ForeColor = Color.White;
-            AbrirFormEnPanel(new FormClientes());
+            AbrirFormEnPanel(new FormDashboard());
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
