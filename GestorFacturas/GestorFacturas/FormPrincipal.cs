@@ -74,6 +74,13 @@ namespace GestorFacturas
             btnFacturas.BackColor = Color.White;
             btnFacturas.ForeColor = Color.MidnightBlue;
         }
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            ResetearColoresMenu();
+            btnDashboard.BackColor = Color.RoyalBlue;
+            btnDashboard.ForeColor = Color.White;
+            AbrirFormEnPanel(new FormClientes());
+        }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
@@ -98,5 +105,6 @@ namespace GestorFacturas
             btnFacturas.ForeColor = Color.White;
             AbrirFormEnPanel(new FormFacturas());
         }
+
     }
 }
