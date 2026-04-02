@@ -179,7 +179,6 @@
             this.lblConexion.Size = new System.Drawing.Size(52, 17);
             this.lblConexion.TabIndex = 0;
             this.lblConexion.Text = "label3";
-            this.lblConexion.Click += new System.EventHandler(this.lblConexion_Click);
             // 
             // FormPrincipal
             // 
@@ -196,6 +195,7 @@
             this.Name = "FormPrincipal";
             this.Text = "Sistema de Gestión de negocios - Dashboard";
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
+            this.Click += new System.EventHandler(this.FormPrincipal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
