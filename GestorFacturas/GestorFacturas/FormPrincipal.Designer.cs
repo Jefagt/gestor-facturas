@@ -40,7 +40,9 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panelContenido = new System.Windows.Forms.Panel();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.lblConexion = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +74,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lblConexion);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 726);
             this.panel2.Name = "panel2";
@@ -165,6 +168,18 @@
             this.panelContenido.Size = new System.Drawing.Size(1148, 701);
             this.panelContenido.TabIndex = 3;
             // 
+            // lblConexion
+            // 
+            this.lblConexion.AutoSize = true;
+            this.lblConexion.BackColor = System.Drawing.Color.Transparent;
+            this.lblConexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConexion.ForeColor = System.Drawing.Color.Black;
+            this.lblConexion.Location = new System.Drawing.Point(11, 2);
+            this.lblConexion.Name = "lblConexion";
+            this.lblConexion.Size = new System.Drawing.Size(52, 17);
+            this.lblConexion.TabIndex = 0;
+            this.lblConexion.Text = "label3";
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,6 +197,8 @@
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -201,5 +218,6 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnFacturas;
+        private System.Windows.Forms.Label lblConexion;
     }
 }
