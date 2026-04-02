@@ -7,17 +7,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace GestorFacturas
 {
     public partial class FormPrincipal : Form
     {
+        string connectionString = "server=localhost;database=gestorfacturas;user=root;password=rootdev;";
+
         private string rolUsuario;
 
         public FormPrincipal(string rol)
         {
             InitializeComponent();
             rolUsuario = rol;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    lblConexion.Text = "Listo";
+                    lblConexion.ForeColor = Color.Green;
+                }
+            }
+            catch (Exception ex)
+            {
+                lblConexion.Text = "Conexión fallida";
+                lblConexion.ForeColor = Color.Red;
+            }
         }
 
         private void FormPrincipal_Load(object sender, EventArgs e)
@@ -106,5 +127,9 @@ namespace GestorFacturas
             AbrirFormEnPanel(new FormFacturas());
         }
 
+        private void lblConexion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
