@@ -20,24 +20,6 @@ namespace GestorFacturas
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            try
-            {
-                using (MySqlConnection conn = new MySqlConnection(connectionString))
-                {
-                    conn.Open();
-                    lblConexion.Text = "Conexión establecida";
-                    lblConexion.ForeColor = Color.Green;
-                }
-            }
-            catch (Exception ex)
-            {
-                lblConexion.Text = "Conexión fallida";
-                lblConexion.ForeColor = Color.Red;
-            }
-        }
-
         private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {                    if (e.RowIndex >= 0)
             {
