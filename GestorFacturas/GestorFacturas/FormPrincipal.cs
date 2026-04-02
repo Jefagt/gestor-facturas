@@ -125,10 +125,5 @@ namespace GestorFacturas
             btnFacturas.ForeColor = Color.White;
             AbrirFormEnPanel(new FormFacturas());
         }
-
-        private void lblConexion_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
