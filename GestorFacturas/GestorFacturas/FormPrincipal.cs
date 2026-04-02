@@ -23,8 +23,9 @@ namespace GestorFacturas
             rolUsuario = rol;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FormPrincipal_Load(object sender, EventArgs e)
         {
+            // conexion
             try
             {
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -39,10 +40,8 @@ namespace GestorFacturas
                 lblConexion.Text = "Conexión fallida";
                 lblConexion.ForeColor = Color.Red;
             }
-        }
 
-        private void FormPrincipal_Load(object sender, EventArgs e)
-        {
+            // verificacion
             if (rolUsuario == "admin")
             {
                 // Admin: acceso completo
