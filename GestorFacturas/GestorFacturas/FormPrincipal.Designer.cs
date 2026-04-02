@@ -179,6 +179,7 @@
             this.lblConexion.Size = new System.Drawing.Size(52, 17);
             this.lblConexion.TabIndex = 0;
             this.lblConexion.Text = "label3";
+            this.lblConexion.Click += new System.EventHandler(this.lblConexion_Click);
             // 
             // FormPrincipal
             // 
