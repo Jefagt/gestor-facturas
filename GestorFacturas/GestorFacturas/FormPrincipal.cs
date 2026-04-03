@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace GestorFacturas
 {
     public partial class FormPrincipal : Form
     {
+        string connectionString = "server=localhost;database=gestorfacturas;user=root;password=rootdev;";
+
         private string rolUsuario;
 
         public FormPrincipal(string rol)
@@ -22,6 +25,23 @@ namespace GestorFacturas
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
+            // conexion
+            try
+            {
+                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                {
+                    conn.Open();
+                    lblConexion.Text = "Listo";
+                    lblConexion.ForeColor = Color.Green;
+                }
+            }
+            catch (Exception ex)
+            {
+                lblConexion.Text = "Conexión fallida";
+                lblConexion.ForeColor = Color.Red;
+            }
+
+            // verificacion
             if (rolUsuario == "admin")
             {
                 // Admin: acceso completo
@@ -105,6 +125,5 @@ namespace GestorFacturas
             btnFacturas.ForeColor = Color.White;
             AbrirFormEnPanel(new FormFacturas());
         }
-
     }
 }
