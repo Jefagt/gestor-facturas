@@ -40,9 +40,14 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panelContenido = new System.Windows.Forms.Panel();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+<<<<<<< HEAD
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+=======
+            this.lblConexion = new System.Windows.Forms.Label();
+>>>>>>> eec027955e4999acdd25ac6f267a7d0f18dde590
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
@@ -75,6 +80,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lblConexion);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 726);
             this.panel2.Name = "panel2";
@@ -169,6 +175,7 @@
             this.panelContenido.Size = new System.Drawing.Size(1148, 701);
             this.panelContenido.TabIndex = 3;
             // 
+<<<<<<< HEAD
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -185,6 +192,19 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 58);
             this.panel5.TabIndex = 6;
+=======
+            // lblConexion
+            // 
+            this.lblConexion.AutoSize = true;
+            this.lblConexion.BackColor = System.Drawing.Color.Transparent;
+            this.lblConexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConexion.ForeColor = System.Drawing.Color.Black;
+            this.lblConexion.Location = new System.Drawing.Point(11, 2);
+            this.lblConexion.Name = "lblConexion";
+            this.lblConexion.Size = new System.Drawing.Size(52, 17);
+            this.lblConexion.TabIndex = 0;
+            this.lblConexion.Text = "label3";
+>>>>>>> eec027955e4999acdd25ac6f267a7d0f18dde590
             // 
             // FormPrincipal
             // 
@@ -201,8 +221,11 @@
             this.Name = "FormPrincipal";
             this.Text = "Sistema de Gestión de negocios - Dashboard";
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
+            this.Click += new System.EventHandler(this.FormPrincipal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -223,7 +246,11 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnFacturas;
+<<<<<<< HEAD
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+=======
+        private System.Windows.Forms.Label lblConexion;
+>>>>>>> eec027955e4999acdd25ac6f267a7d0f18dde590
     }
 }
