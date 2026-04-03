@@ -31,14 +31,14 @@ namespace GestorFacturas
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
                     conn.Open();
-                    lblConexion.Text = "Listo";
-                    lblConexion.ForeColor = Color.Green;
+                    //lblConexion.Text = "Listo";
+                    //lblConexion.ForeColor = Color.Green;
                 }
             }
             catch (Exception ex)
             {
-                lblConexion.Text = "Conexión fallida";
-                lblConexion.ForeColor = Color.Red;
+                //lblConexion.Text = "Conexión fallida";
+                //lblConexion.ForeColor = Color.Red;
             }
 
             // verificacion
