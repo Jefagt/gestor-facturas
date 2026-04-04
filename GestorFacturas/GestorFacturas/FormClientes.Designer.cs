@@ -44,7 +44,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnListar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.lblConexion = new System.Windows.Forms.Label();
+            this.lblConexion0 = new System.Windows.Forms.Label();
             this.btnVerProductos = new System.Windows.Forms.Button();
             this.btnVerFacturas = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
@@ -201,15 +201,15 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Lista de clientes";
             // 
-            // lblConexion
+            // lblConexion0
             // 
-            this.lblConexion.AutoSize = true;
-            this.lblConexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConexion.Location = new System.Drawing.Point(43, 484);
-            this.lblConexion.Name = "lblConexion";
-            this.lblConexion.Size = new System.Drawing.Size(131, 13);
-            this.lblConexion.TabIndex = 18;
-            this.lblConexion.Text = "Estado de conexion...";
+            this.lblConexion0.AutoSize = true;
+            this.lblConexion0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConexion0.Location = new System.Drawing.Point(43, 484);
+            this.lblConexion0.Name = "lblConexion0";
+            this.lblConexion0.Size = new System.Drawing.Size(131, 13);
+            this.lblConexion0.TabIndex = 18;
+            this.lblConexion0.Text = "Estado de conexion...";
             // 
             // btnVerProductos
             // 
@@ -240,7 +240,7 @@
             this.ClientSize = new System.Drawing.Size(790, 519);
             this.Controls.Add(this.btnVerFacturas);
             this.Controls.Add(this.btnVerProductos);
-            this.Controls.Add(this.lblConexion);
+            this.Controls.Add(this.lblConexion0);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.btnEliminar);
@@ -283,7 +283,7 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblConexion;
+        private System.Windows.Forms.Label lblConexion0;
         private System.Windows.Forms.Button btnVerProductos;
         private System.Windows.Forms.Button btnVerFacturas;
     }
