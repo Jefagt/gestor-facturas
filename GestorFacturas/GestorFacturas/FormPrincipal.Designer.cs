@@ -40,12 +40,10 @@
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panelContenido = new System.Windows.Forms.Panel();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-<<<<<<< HEAD
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-=======
             this.lblConexion = new System.Windows.Forms.Label();
->>>>>>> eec027955e4999acdd25ac6f267a7d0f18dde590
+
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -175,7 +173,6 @@
             this.panelContenido.Size = new System.Drawing.Size(1148, 701);
             this.panelContenido.TabIndex = 3;
             // 
-<<<<<<< HEAD
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -192,7 +189,7 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 58);
             this.panel5.TabIndex = 6;
-=======
+            //
             // lblConexion
             // 
             this.lblConexion.AutoSize = true;
@@ -204,7 +201,6 @@
             this.lblConexion.Size = new System.Drawing.Size(52, 17);
             this.lblConexion.TabIndex = 0;
             this.lblConexion.Text = "label3";
->>>>>>> eec027955e4999acdd25ac6f267a7d0f18dde590
             // 
             // FormPrincipal
             // 
@@ -246,11 +242,8 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnFacturas;
-<<<<<<< HEAD
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-=======
         private System.Windows.Forms.Label lblConexion;
->>>>>>> eec027955e4999acdd25ac6f267a7d0f18dde590
     }
 }
