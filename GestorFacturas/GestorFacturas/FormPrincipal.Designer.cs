@@ -41,19 +41,15 @@
             this.btnProductos = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
-            this.panelContenido = new System.Windows.Forms.Panel();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panelContenido = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panelContenido.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -202,16 +198,6 @@
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // panelContenido
-            // 
-            this.panelContenido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelContenido.Controls.Add(this.panel6);
-            this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenido.Location = new System.Drawing.Point(200, 25);
-            this.panelContenido.Name = "panelContenido";
-            this.panelContenido.Size = new System.Drawing.Size(809, 678);
-            this.panelContenido.TabIndex = 3;
-            // 
             // btnCerrarSesion
             // 
             this.btnCerrarSesion.BackColor = System.Drawing.Color.Red;
@@ -225,25 +211,6 @@
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(16, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(504, 38);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Nombre de la empresa o negocio";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Location = new System.Drawing.Point(-1, -1);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1148, 58);
-            this.panel6.TabIndex = 1;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
@@ -256,6 +223,15 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(805, 615);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // panelContenido
+            // 
+            this.panelContenido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenido.Location = new System.Drawing.Point(200, 25);
+            this.panelContenido.Name = "panelContenido";
+            this.panelContenido.Size = new System.Drawing.Size(809, 678);
+            this.panelContenido.TabIndex = 3;
             // 
             // FormPrincipal
             // 
@@ -281,9 +257,6 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
-            this.panelContenido.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -293,7 +266,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panelContenido;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Label label2;
@@ -305,8 +277,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblConexion;
         private System.Windows.Forms.Button btnCerrarSesion;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panelContenido;
     }
 }
