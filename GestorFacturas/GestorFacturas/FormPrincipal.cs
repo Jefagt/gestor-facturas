@@ -125,5 +125,21 @@ namespace GestorFacturas
             btnFacturas.ForeColor = Color.White;
             AbrirFormEnPanel(new FormFacturas());
         }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            // Confirmación opcional
+            DialogResult result = MessageBox.Show("¿Desea cerrar sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Abrir nuevamente el login
+                FormLogin login = new FormLogin();
+                login.Show();
+
+                // Cerrar el form principal
+                this.Close();
+            }
+        }
     }
 }
