@@ -44,11 +44,15 @@
             this.panelContenido = new System.Windows.Forms.Panel();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panelContenido.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,7 +63,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1348, 25);
+            this.panel1.Size = new System.Drawing.Size(1009, 25);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -81,9 +85,9 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lblConexion);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 726);
+            this.panel2.Location = new System.Drawing.Point(0, 703);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1348, 23);
+            this.panel2.Size = new System.Drawing.Size(1009, 23);
             this.panel2.TabIndex = 1;
             // 
             // lblConexion
@@ -111,8 +115,9 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 25);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 701);
+            this.panel3.Size = new System.Drawing.Size(200, 678);
             this.panel3.TabIndex = 2;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel5
             // 
@@ -138,7 +143,7 @@
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.btnCerrarSesion);
-            this.panel4.Location = new System.Drawing.Point(-1, 605);
+            this.panel4.Location = new System.Drawing.Point(-1, 582);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 95);
             this.panel4.TabIndex = 5;
@@ -148,7 +153,7 @@
             this.btnFacturas.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnFacturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFacturas.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnFacturas.Location = new System.Drawing.Point(11, 221);
+            this.btnFacturas.Location = new System.Drawing.Point(11, 228);
             this.btnFacturas.Name = "btnFacturas";
             this.btnFacturas.Size = new System.Drawing.Size(173, 36);
             this.btnFacturas.TabIndex = 4;
@@ -161,7 +166,7 @@
             this.btnProductos.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductos.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnProductos.Location = new System.Drawing.Point(11, 168);
+            this.btnProductos.Location = new System.Drawing.Point(11, 175);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(173, 36);
             this.btnProductos.TabIndex = 3;
@@ -174,7 +179,7 @@
             this.btnClientes.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnClientes.Location = new System.Drawing.Point(11, 115);
+            this.btnClientes.Location = new System.Drawing.Point(11, 122);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(173, 36);
             this.btnClientes.TabIndex = 2;
@@ -187,7 +192,7 @@
             this.btnDashboard.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnDashboard.Location = new System.Drawing.Point(11, 64);
+            this.btnDashboard.Location = new System.Drawing.Point(11, 71);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(173, 36);
             this.btnDashboard.TabIndex = 0;
@@ -198,10 +203,11 @@
             // panelContenido
             // 
             this.panelContenido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelContenido.Controls.Add(this.panel6);
             this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenido.Location = new System.Drawing.Point(200, 25);
             this.panelContenido.Name = "panelContenido";
-            this.panelContenido.Size = new System.Drawing.Size(1148, 701);
+            this.panelContenido.Size = new System.Drawing.Size(809, 678);
             this.panelContenido.TabIndex = 3;
             // 
             // btnCerrarSesion
@@ -217,12 +223,31 @@
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label3.Location = new System.Drawing.Point(16, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(504, 38);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Nombre de la empresa o negocio";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Location = new System.Drawing.Point(-1, -1);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1148, 58);
+            this.panel6.TabIndex = 1;
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(1348, 749);
+            this.ClientSize = new System.Drawing.Size(1009, 726);
             this.Controls.Add(this.panelContenido);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -241,6 +266,9 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panelContenido.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -262,5 +290,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblConexion;
         private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel6;
     }
 }
