@@ -34,6 +34,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblConexion = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,13 +45,15 @@
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panelContenido = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -119,6 +122,18 @@
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.button1.Location = new System.Drawing.Point(11, 281);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(173, 36);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Configuración";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
@@ -156,9 +171,10 @@
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.btnCerrarSesion);
-            this.panel4.Location = new System.Drawing.Point(-1, 582);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 573);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 95);
+            this.panel4.Size = new System.Drawing.Size(198, 103);
             this.panel4.TabIndex = 5;
             // 
             // btnCerrarSesion
@@ -226,26 +242,34 @@
             this.btnDashboard.UseVisualStyleBackColor = false;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(200, 25);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(809, 59);
+            this.panel6.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label3.Location = new System.Drawing.Point(14, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(504, 38);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Nombre de la empresa o negocio";
+            // 
             // panelContenido
             // 
-            this.panelContenido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenido.Location = new System.Drawing.Point(200, 25);
+            this.panelContenido.Location = new System.Drawing.Point(200, 84);
             this.panelContenido.Name = "panelContenido";
-            this.panelContenido.Size = new System.Drawing.Size(809, 678);
-            this.panelContenido.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.button1.Location = new System.Drawing.Point(11, 281);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 36);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Configuración";
-            this.button1.UseVisualStyleBackColor = false;
+            this.panelContenido.Size = new System.Drawing.Size(809, 619);
+            this.panelContenido.TabIndex = 5;
             // 
             // FormPrincipal
             // 
@@ -254,6 +278,7 @@
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1009, 726);
             this.Controls.Add(this.panelContenido);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -271,12 +296,13 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
@@ -292,7 +318,11 @@
         private System.Windows.Forms.Label lblConexion;
         private System.Windows.Forms.Button btnCerrarSesion;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panelContenido;
+        private System.Windows.Forms.Panel panel6;
+        
         private System.Windows.Forms.Button button1;
+        
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panelContenido;
     }
 }
