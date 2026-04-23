@@ -34,6 +34,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -50,34 +65,18 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -165,6 +164,178 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 222F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(653, 728);
             this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // panel10
+            // 
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.label24);
+            this.panel10.Controls.Add(this.label25);
+            this.panel10.Controls.Add(this.label26);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(336, 515);
+            this.panel10.Margin = new System.Windows.Forms.Padding(10);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(307, 203);
+            this.panel10.TabIndex = 7;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Green;
+            this.label24.Location = new System.Drawing.Point(33, 94);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(149, 16);
+            this.label24.TabIndex = 2;
+            this.label24.Text = "+2% vs el mes anterior";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label25.Location = new System.Drawing.Point(30, 42);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(47, 33);
+            this.label25.TabIndex = 1;
+            this.label25.Text = "$0";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label26.Location = new System.Drawing.Point(31, 9);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(136, 18);
+            this.label26.TabIndex = 0;
+            this.label26.Text = "Actividad reciente";
+            // 
+            // panel9
+            // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.label21);
+            this.panel9.Controls.Add(this.label22);
+            this.panel9.Controls.Add(this.label23);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Location = new System.Drawing.Point(10, 515);
+            this.panel9.Margin = new System.Windows.Forms.Padding(10);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(306, 203);
+            this.panel9.TabIndex = 6;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Green;
+            this.label21.Location = new System.Drawing.Point(33, 94);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(149, 16);
+            this.label21.TabIndex = 2;
+            this.label21.Text = "+2% vs el mes anterior";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label22.Location = new System.Drawing.Point(30, 42);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(47, 33);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "$0";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label23.Location = new System.Drawing.Point(31, 9);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(183, 18);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "Productos mas vendidos";
+            // 
+            // panel8
+            // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.label18);
+            this.panel8.Controls.Add(this.label19);
+            this.panel8.Controls.Add(this.label20);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(336, 308);
+            this.panel8.Margin = new System.Windows.Forms.Padding(10);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(307, 187);
+            this.panel8.TabIndex = 5;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Green;
+            this.label18.Location = new System.Drawing.Point(33, 94);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(149, 16);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "+2% vs el mes anterior";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label19.Location = new System.Drawing.Point(30, 42);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(47, 33);
+            this.label19.TabIndex = 1;
+            this.label19.Text = "$0";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label20.Location = new System.Drawing.Point(31, 9);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(166, 18);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Ingresos de la semana";
+            // 
+            // panel7
+            // 
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.label16);
+            this.panel7.Controls.Add(this.label17);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(10, 308);
+            this.panel7.Margin = new System.Windows.Forms.Padding(10);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(306, 187);
+            this.panel7.TabIndex = 4;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label16.Location = new System.Drawing.Point(30, 142);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(47, 33);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "$0";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label17.Location = new System.Drawing.Point(31, 9);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(151, 18);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Ventas de la semana";
             // 
             // panel6
             // 
@@ -350,190 +521,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "TOTAL CLIENTES";
             // 
-            // panel7
-            // 
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label15);
-            this.panel7.Controls.Add(this.label16);
-            this.panel7.Controls.Add(this.label17);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(10, 308);
-            this.panel7.Margin = new System.Windows.Forms.Padding(10);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(306, 187);
-            this.panel7.TabIndex = 4;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Green;
-            this.label15.Location = new System.Drawing.Point(33, 94);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(149, 16);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "+2% vs el mes anterior";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label16.Location = new System.Drawing.Point(30, 42);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(47, 33);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "$0";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label17.Location = new System.Drawing.Point(31, 9);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(151, 18);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Ventas de la semana";
-            // 
-            // panel8
-            // 
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.label18);
-            this.panel8.Controls.Add(this.label19);
-            this.panel8.Controls.Add(this.label20);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(336, 308);
-            this.panel8.Margin = new System.Windows.Forms.Padding(10);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(307, 187);
-            this.panel8.TabIndex = 5;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Green;
-            this.label18.Location = new System.Drawing.Point(33, 94);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(149, 16);
-            this.label18.TabIndex = 2;
-            this.label18.Text = "+2% vs el mes anterior";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label19.Location = new System.Drawing.Point(30, 42);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(47, 33);
-            this.label19.TabIndex = 1;
-            this.label19.Text = "$0";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label20.Location = new System.Drawing.Point(31, 9);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(151, 18);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Ventas de la semana";
-            // 
-            // panel9
-            // 
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label21);
-            this.panel9.Controls.Add(this.label22);
-            this.panel9.Controls.Add(this.label23);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(10, 515);
-            this.panel9.Margin = new System.Windows.Forms.Padding(10);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(306, 203);
-            this.panel9.TabIndex = 6;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Green;
-            this.label21.Location = new System.Drawing.Point(33, 94);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(149, 16);
-            this.label21.TabIndex = 2;
-            this.label21.Text = "+2% vs el mes anterior";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label22.Location = new System.Drawing.Point(30, 42);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(47, 33);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "$0";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label23.Location = new System.Drawing.Point(31, 9);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(151, 18);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "Ventas de la semana";
-            // 
-            // panel10
-            // 
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.label24);
-            this.panel10.Controls.Add(this.label25);
-            this.panel10.Controls.Add(this.label26);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(336, 515);
-            this.panel10.Margin = new System.Windows.Forms.Padding(10);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(307, 203);
-            this.panel10.TabIndex = 7;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.Green;
-            this.label24.Location = new System.Drawing.Point(33, 94);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(149, 16);
-            this.label24.TabIndex = 2;
-            this.label24.Text = "+2% vs el mes anterior";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Arial Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label25.Location = new System.Drawing.Point(30, 42);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(47, 33);
-            this.label25.TabIndex = 1;
-            this.label25.Text = "$0";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label26.Location = new System.Drawing.Point(31, 9);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(151, 18);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Ventas de la semana";
-            // 
             // FormDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -548,6 +535,14 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -556,14 +551,6 @@
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -605,7 +592,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
     }
