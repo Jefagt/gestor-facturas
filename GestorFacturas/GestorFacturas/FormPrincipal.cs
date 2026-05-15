@@ -25,6 +25,10 @@ namespace GestorFacturas
 
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
+            btnDashboard.BackColor = Color.RoyalBlue;
+            btnDashboard.ForeColor = Color.White;
+            AbrirFormEnPanel(new FormDashboard());
+
             // conexion
             try
             {
