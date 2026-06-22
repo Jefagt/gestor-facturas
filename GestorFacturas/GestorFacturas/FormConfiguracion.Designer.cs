@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             this.SuspendLayout();
             // 
             // FormConfiguracion
@@ -39,6 +40,12 @@
             this.Text = "FormConfiguracion";
             this.ResumeLayout(false);
 
+=======
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "FormConfiguracion";
+>>>>>>> 37d7f50933064f48a2ea29e670b99f1ce7573ef7
         }
 
         #endregion
