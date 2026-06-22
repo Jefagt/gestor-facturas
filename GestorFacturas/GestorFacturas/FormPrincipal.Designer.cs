@@ -34,7 +34,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblConexion = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnConfiguracion = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,6 +48,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panelContenido = new System.Windows.Forms.Panel();
+            this.btnAccesoRapido = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -78,7 +79,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Sistema de Gestión de Empresas v1.0";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -107,7 +107,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.btnConfiguracion);
             this.panel3.Controls.Add(this.tableLayoutPanel1);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
@@ -120,19 +120,19 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 678);
             this.panel3.TabIndex = 2;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // button1
+            // btnConfiguracion
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.button1.Location = new System.Drawing.Point(11, 281);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 36);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Configuración";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnConfiguracion.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnConfiguracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfiguracion.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnConfiguracion.Location = new System.Drawing.Point(11, 281);
+            this.btnConfiguracion.Name = "btnConfiguracion";
+            this.btnConfiguracion.Size = new System.Drawing.Size(173, 36);
+            this.btnConfiguracion.TabIndex = 7;
+            this.btnConfiguracion.Text = "Configuración";
+            this.btnConfiguracion.UseVisualStyleBackColor = false;
+            this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -272,12 +272,28 @@
             this.panelContenido.Size = new System.Drawing.Size(809, 619);
             this.panelContenido.TabIndex = 5;
             // 
+            // btnAccesoRapido
+            // 
+            this.btnAccesoRapido.AutoSize = true;
+            this.btnAccesoRapido.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnAccesoRapido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccesoRapido.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccesoRapido.ForeColor = System.Drawing.Color.White;
+            this.btnAccesoRapido.Location = new System.Drawing.Point(923, 624);
+            this.btnAccesoRapido.Name = "btnAccesoRapido";
+            this.btnAccesoRapido.Size = new System.Drawing.Size(60, 60);
+            this.btnAccesoRapido.TabIndex = 0;
+            this.btnAccesoRapido.Text = "+";
+            this.btnAccesoRapido.UseVisualStyleBackColor = false;
+            this.btnAccesoRapido.Click += new System.EventHandler(this.btnAccesoRapido_Click);
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1009, 726);
+            this.Controls.Add(this.btnAccesoRapido);
             this.Controls.Add(this.panelContenido);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel3);
@@ -300,6 +316,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -321,9 +338,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel6;
         
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnConfiguracion;
         
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panelContenido;
+        private System.Windows.Forms.Button btnAccesoRapido;
     }
 }

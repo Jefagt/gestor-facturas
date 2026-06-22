@@ -1,13 +1,14 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace GestorFacturas
 {
@@ -28,6 +29,20 @@ namespace GestorFacturas
             btnDashboard.BackColor = Color.RoyalBlue;
             btnDashboard.ForeColor = Color.White;
             AbrirFormEnPanel(new FormDashboard());
+
+            // Mostrar boton de acceso rapido circular
+            // Asegurar que el botón sea cuadrado
+            int size = Math.Min(btnAccesoRapido.Width, btnAccesoRapido.Height);
+            btnAccesoRapido.Size = new Size(size, size);
+
+            // Crear región circular
+            GraphicsPath gp = new GraphicsPath();
+            gp.AddEllipse(0, 0, btnAccesoRapido.Width, btnAccesoRapido.Height);
+            btnAccesoRapido.Region = new Region(gp);
+
+            btnAccesoRapido.BringToFront();
+
+            btnAccesoRapido.BringToFront();
 
             // conexion
             try
@@ -67,9 +82,10 @@ namespace GestorFacturas
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void FormPrincipal_Resize(object sender, EventArgs e)
         {
-
+            btnAccesoRapido.Left = this.ClientSize.Width - btnAccesoRapido.Width - 20;
+            btnAccesoRapido.Top = this.ClientSize.Height - btnAccesoRapido.Height - 20;
         }
 
         private void AbrirFormEnPanel(Form formHijo)
@@ -97,6 +113,8 @@ namespace GestorFacturas
             btnProductos.ForeColor = Color.MidnightBlue;
             btnFacturas.BackColor = Color.White;
             btnFacturas.ForeColor = Color.MidnightBlue;
+            btnConfiguracion.BackColor = Color.White;
+            btnConfiguracion.ForeColor = Color.MidnightBlue;
         }
         private void btnDashboard_Click(object sender, EventArgs e)
         {
@@ -130,6 +148,14 @@ namespace GestorFacturas
             AbrirFormEnPanel(new FormFacturas());
         }
 
+        private void btnConfiguracion_Click(object sender, EventArgs e)
+        {
+            ResetearColoresMenu();
+            btnConfiguracion.BackColor = Color.RoyalBlue;
+            btnConfiguracion.ForeColor = Color.White;
+            AbrirFormEnPanel(new FormConfiguracion());
+        }
+
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
             // Confirmación opcional
@@ -146,9 +172,9 @@ namespace GestorFacturas
             }
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void btnAccesoRapido_Click(object sender, EventArgs e)
         {
-
+            AbrirFormEnPanel(new FormFacturas());
         }
     }
 }

@@ -15,6 +15,7 @@ namespace GestorFacturas
         public FormLogin()
         {
             InitializeComponent();
+            this.AcceptButton = btnLogin; // Botón para iniciar sesión
         }
 
         private void FormLogin_Resize(object sender, EventArgs e)
@@ -64,6 +65,16 @@ namespace GestorFacturas
             FormPrincipal form = new FormPrincipal(rol); // pasamos el rol al form principal
             form.Show();
             this.Hide();
+        }
+
+        private void txtContrasena_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }
